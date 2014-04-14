@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    
+    <TextView 
+        android:id="@+id/text_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/usuario"
+        />
+    <EditText android:id="@+id/editText_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_toRightOf="@id/text_usuario"/>
+    
+     <TextView 
+        android:id="@+id/text_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/senha"
+        android:layout_below="@id/editText_usuario"/>
+    
+    <EditText android:id="@+id/editText_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_toRightOf="@id/text_senha"
+        android:layout_below="@id/editText_usuario"/>
+    
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loguin"
+       android:layout_alignParentRight="true"
+       android:layout_below="@id/editText_senha"
+        android:width="30dp"
+        android:height="30dp"
+        android:textSize="12sp"/>
+    
+
+</RelativeLayout>
